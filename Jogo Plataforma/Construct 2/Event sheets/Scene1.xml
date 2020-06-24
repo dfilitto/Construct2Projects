@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Scene1</name>
+    <events>
+        <event-block sid="6823999901760559">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="8353954237411333" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="7736179025262852" type="Player">
+                    <param id="0" name="Object">PlayerBox</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8209858934814287">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3131280990536442" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="2534714241296364" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9473845724363682">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2867664123996675" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="5158187465475524" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9681452143387308">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="6470488991113328" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="463775861343825" type="Player">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9995316762150502">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="6551069658532204" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7186046705056562" type="Player">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5414014939214033">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="72153090853901" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2739374379149918" type="Player">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5441329716966308">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="4244187965944232" type="PlayerBox" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="659743706982419">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="2389755980383696" type="PlayerBox" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4601468681059527" type="Player">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5585867789599643">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5873830735877066" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="877770067958449" type="Player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Jogo Plataforma Protótipo</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1w0xx12sek9ye</unique-id>
+    <saved-with-version>20600</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1024</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="BackGround" sid="8601155546720768">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Backgrounds\colored_land2.fw.png" />
+        </object-type>
+        <object-type name="Grass" sid="5355356489794457">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3347944355553308">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="18" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1666960014889024" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grass.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassCenter.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassCenter_round.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassCliff_left.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassCliff_right.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassCliffAlt_left.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassCliffAlt_right.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassCorner_left.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassCorner_right.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassHalf.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassHalf_left.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassHalf_mid.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassHalf_right.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassHill_left.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassHill_right.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassLeft.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassMid.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassRight.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player" sid="241491175534899">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="5368280124012705" speed="5">
+                    <frame duration="1" hotspotX="0.504673" hotspotY="1" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Players\128x256\Green\alienGreen_front.png" />
+                </animation>
+                <animation framecount="2" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="1118453632687108" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Players\128x256\Green\alienGreen_walk1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Players\128x256\Green\alienGreen_walk2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="4338539120351306" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Players\128x256\Green\alienGreen_jump.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Duck" pingpong="0" repeatcount="1" repeatto="0" sid="9602459832218319" speed="5">
+                    <frame duration="1" hotspotX="0.504348" hotspotY="1" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Players\128x256\Green\alienGreen_duck.png" />
+                </animation>
+                <animation framecount="2" loop="0" name="Climb" pingpong="0" repeatcount="1" repeatto="0" sid="8463111286019624" speed="5">
+                    <frame duration="1" hotspotX="0.504673" hotspotY="1" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Players\128x256\Green\alienGreen_climb1.png" />
+                    <frame duration="1" hotspotX="0.504673" hotspotY="1" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Players\128x256\Green\alienGreen_climb2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Hit" pingpong="0" repeatcount="1" repeatto="0" sid="433874302144764" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Players\128x256\Green\alienGreen_hit.png" />
+                </animation>
+                <animation framecount="2" loop="0" name="Swim" pingpong="0" repeatcount="1" repeatto="0" sid="4775553046471277" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.993631" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Players\128x256\Green\alienGreen_swim1.png" />
+                    <frame duration="1" hotspotX="0.495575" hotspotY="0.99375" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Players\128x256\Green\alienGreen_swim2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="7376106665002856">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="PlayerBox" sid="4321540662471721">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="5240732945867179">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="6989965632020409">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="5227254588752548">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6749665861057744" speed="5">
+                    <frame duration="1" hotspotX="0.504673" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fence" sid="4462630626904965">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="123941510774853" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Tiles\fence.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Tiles\fenceBroken.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Water" sid="3327884754510281">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8102935144823577" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Tiles\water.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Tiles\waterTop_high.png" />
+                    <frame duration="1" hotspotX="0.00769231" hotspotY="-0.387097" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Tiles\waterTop_low.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Rock" sid="5239918298166697">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2707123985464162" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Danilo\Desktop\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Tiles\rock.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Frog" sid="7162648975752613">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="state" sid="1131757940393522" type="number" />
+                <instance-variable name="speedy" sid="7826627451093755" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="9011065099022396">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="1610289682734331" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.109589" original-source="C:\Users\Danilo\Documents\Desenvolvimento de jogos\@Construct 2\jogos Construct 2\Make Indie Games\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Enemies\frog.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.343434" original-source="C:\Users\Danilo\Documents\Desenvolvimento de jogos\@Construct 2\jogos Construct 2\Make Indie Games\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Enemies\frog_move.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Death" pingpong="0" repeatcount="1" repeatto="0" sid="1708290092834916" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Danilo\Documents\Desenvolvimento de jogos\@Construct 2\jogos Construct 2\Make Indie Games\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Enemies\frog_dead.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="brickBrown" sid="548997389540676">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2049491337411053">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8208142821645253" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Danilo\Documents\Desenvolvimento de jogos\@Construct 2\jogos Construct 2\Make Indie Games\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Tiles\brickBrown.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kick" sid="1632240888519481">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3263881507276203" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platformHorizontal" sid="6751026256821926">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="1015632805927457">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="9831639024313189">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453932761897469" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Danilo\Documents\Desenvolvimento de jogos\@Construct 2\jogos Construct 2\Make Indie Games\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassHalf_left.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Danilo\Documents\Desenvolvimento de jogos\@Construct 2\jogos Construct 2\Make Indie Games\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassHalf_mid.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Danilo\Documents\Desenvolvimento de jogos\@Construct 2\jogos Construct 2\Make Indie Games\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassHalf_right.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="platformVertical" sid="9913298686855519">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="7417457666749408">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="7689304081664416">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2708313139149498" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Danilo\Documents\Desenvolvimento de jogos\@Construct 2\jogos Construct 2\Make Indie Games\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassHalf_left.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Danilo\Documents\Desenvolvimento de jogos\@Construct 2\jogos Construct 2\Make Indie Games\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassHalf_mid.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Danilo\Documents\Desenvolvimento de jogos\@Construct 2\jogos Construct 2\Make Indie Games\Jogo Plataforma\Sprites\platformer-pack-redux-360-assets\PNG\Ground\Grass\grassHalf_right.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Fase 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Fase 1.xml</event-sheet>
+        <event-sheet>Personagem.xml</event-sheet>
+        <event-sheet>Frog.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="83" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

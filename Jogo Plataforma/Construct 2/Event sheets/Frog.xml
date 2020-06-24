@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Frog</name>
+    <events>
+        <event-block sid="8708876294488094">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="4771299231352471" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="512952463044933" type="Frog">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">choose(0,1)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="278061677040158">
+            <conditions>
+                <condition id="-24" name="For Each (ordered)" sid="3761166839173897" type="System">
+                    <param id="0" name="Object">Frog</param>
+                    <param id="1" name="Expression">0</param>
+                    <param id="2" name="Order">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <comment>Walk Left</comment>
+                <event-block sid="4008824413235606">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4824680628446207" type="Frog">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="3471895226707203" type="Frog">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="6267324113210815" type="Frog">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Right</comment>
+                <event-block sid="364445159262763">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2965317835996247" type="Frog">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="4247724231749807" type="Frog">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="2655798589202187" type="Frog">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8172052632183139">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="4048325041385166" type="Frog">
+                    <param id="0" name="Side">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="8603687110766597" type="Frog">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6358709080505269">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="937545470544116" type="Frog">
+                    <param id="0" name="Side">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="1547362076246107" type="Frog">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2269932900831813">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3881108147659052" type="Frog">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1824896986130878" type="Player" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
